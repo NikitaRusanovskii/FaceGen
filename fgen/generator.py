@@ -1,5 +1,17 @@
 import ast
 from abc import ABC, abstractmethod
+from pathlib import Path
+
+
+"""
+Эта функция мигрировала сюда из writer.py, поскольку нет нужды выделять
+Целый компонент под функцию, длиной в 3 строчки.
+"""
+
+
+def write_in_file(path_to_file: Path, code: str):
+    with open(path_to_file, 'w') as ftw:
+        ftw.write(code)
 
 
 """Этот компонент ответственнен только за создание кода из AST"""

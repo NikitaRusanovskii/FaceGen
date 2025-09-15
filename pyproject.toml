@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fgen"
+version = "0.1.0"
+description = "A utility for automatically generating interfaces based on ready-made implementations."
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[project.scripts]
+fgen = "fgen.main:main"

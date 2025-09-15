@@ -1,4 +1,4 @@
-from mocker import face, face_method
+from fgen import face, face_method
 
 
 @face
