@@ -58,11 +58,6 @@ git clone https://github.com/yourname/facegen.git
 cd facegen
 ```
 
-2. Установите зависимости:
-```bash
-pip install -r requirements.txt
-```
-
 ## 🗂 Структура проекта
 
 ```
